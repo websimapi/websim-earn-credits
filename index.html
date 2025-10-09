@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Websim Rewards — Share & Earn</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app" class="page">
+      <header class="topbar">
+        <div class="brand">
+          <div class="logo">Websim</div>
+          <div class="tag">Prompt → Earn · Share → Earn</div>
+        </div>
+        <nav class="nav">
+          <a href="https://websim.com/@websim/video-rewards" target="_blank" rel="noopener">Video Rewards</a>
+          <a href="https://discord.com/invite/websim" target="_blank" rel="noopener" class="btn-outline">Join Discord</a>
+        </nav>
+      </header>
+
+      <main class="content">
+        <section class="hero">
+          <h1>Turn your prompts & shares into Websim credits</h1>
+          <p class="lead">Use GPT‑5 Mini for free prompts, earn credits when friends use your links, and collect rewards from videos and community engagement.</p>
+
+          <div class="cta-row">
+            <button id="create-link" class="btn-primary">Create Share Link — Earn Credits</button>
+            <a class="btn-secondary" href="https://websim.com/@websim/video-rewards" target="_blank" rel="noopener">Watch Video — Earn</a>
+          </div>
+        </section>
+
+        <section class="how">
+          <h2>How it works</h2>
+          <ol>
+            <li><strong>Prompt for free:</strong> Use GPT‑5 Mini to craft prompts — unlimited, right inside Websim.</li>
+            <li><strong>Share your link:</strong> Create a personalized referral link and share it with friends or on social media.</li>
+            <li><strong>Earn credits:</strong> When people sign up or interact via your link, you receive Websim credits to spend.</li>
+            <li><strong>Boost with videos & posts:</strong> Watch reward videos and post projects to the Discord to increase earnings.</li>
+          </ol>
+        </section>
+
+        <section class="share-panel" aria-labelledby="share-title">
+          <div class="panel-left">
+            <h3 id="share-title">Generate Your Referral Link</h3>
+            <p>Create a unique share link to track referrals and credits.</p>
+
+            <label class="input-label">Your display name</label>
+            <input id="name" type="text" placeholder="e.g. Alex" />
+
+            <label class="input-label">Optional note</label>
+            <input id="note" type="text" placeholder="Quick message for your friends" />
+
+            <div class="panel-actions">
+              <button id="generate" class="btn-primary">Generate Link</button>
+              <button id="copy" class="btn-outline" disabled>Copy</button>
+            </div>
+
+            <div id="result" class="result" aria-live="polite" hidden>
+              <label>Referral Link</label>
+              <div class="result-row">
+                <input id="result-input" readonly />
+                <button id="open-link" class="btn-ghost">Open</button>
+              </div>
+              <p class="muted">Share this link on social media or post your project in Discord to earn more credits.</p>
+            </div>
+          </div>
+
+          <div class="panel-right">
+            <h4>Quick actions</h4>
+            <ul class="quick-list">
+              <li><a href="https://discord.com/channels/1223113914271793282/1257448798431744042" target="_blank">Post Work In Progress</a></li>
+              <li><a href="https://discord.com/channels/1223113914271793282/1261784515660218558" target="_blank">Show & Tell</a></li>
+              <li><a href="https://discord.com/channels/1223113914271793282/1223121481459040411" target="_blank">Ask Questions</a></li>
+              <li><a href="https://discord.com/channels/1223113914271793282/1272999778011185182" target="_blank">Request Features</a></li>
+            </ul>
+
+            <div class="tips">
+              <h5>Pro tips</h5>
+              <ul>
+                <li>Include a short demo video or screenshots when posting projects.</li>
+                <li>Tag your posts with relevant categories to get more engagement.</li>
+                <li>Share regularly — consistent activity earns visibility and credits.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <small>© Websim · <a href="https://websim.com/@websim/video-rewards" target="_blank">Video rewards</a> · <a href="https://discord.com/invite/websim" target="_blank">Discord</a></small>
+      </footer>
+    </div>
+
+    <script src="app.js" type="module"></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
